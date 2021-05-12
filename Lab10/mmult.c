@@ -8,11 +8,13 @@ int main(void) {
     srand(time(NULL)); // inicializa random generator
     for(i = 0; i < N; i++) {
         for(j = 0; j < N; j++) {
-            A[i][j] = rand()%100;B[i][j] = rand()%100;
+            A[i][j] = rand()%100;
+            B[i][j] = rand()%100;
         }
     }
     clock_t begin, end;
-    double time_spent;begin = clock();
+    double time_spent;
+    begin = clock();
     
     for(i = 0; i < N; i++)
         for(j = 0; j < N; j++)
